@@ -1,5 +1,8 @@
 # React + SpringBoot(JPA) 활용한 기본 게시판 CRUD 구현
 
+> back(jpa): springmvc/src/main/java/hello/springmvc \
+> front(react) : springmvc/src/reactfront
+
 ## 사용툴
 - IntelliJ(Spring Boot)
 - VSCode(React)
