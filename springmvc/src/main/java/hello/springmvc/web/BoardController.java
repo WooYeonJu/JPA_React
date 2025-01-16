@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class BoardController {
 
     private final BoardService boardService;
@@ -22,6 +23,7 @@ public class BoardController {
     @CrossOrigin
     @GetMapping("/board")
     public ResponseEntity<?> findAll(){
+        System.out.println("findALl");
         return new ResponseEntity<>(boardService.findAllBoard(), HttpStatus.OK);
     }
 

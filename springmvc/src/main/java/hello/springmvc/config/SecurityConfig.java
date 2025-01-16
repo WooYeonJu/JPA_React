@@ -13,21 +13,26 @@ import org.springframework.security.web.SecurityFilterChain;
 @RequiredArgsConstructor
 public class SecurityConfig {
 
-        @Bean
-        public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-            http
-                    .csrf(csrf -> csrf.disable())
-                    .authorizeHttpRequests(authorize -> authorize
-                            .requestMatchers("/login").permitAll()
-                            .anyRequest().authenticated()
-                    )
-                    .formLogin(login -> login.disable());
+//        @Bean
+//        public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+//            http
+//                    .csrf(csrf -> csrf.disable())
+//                    .authorizeHttpRequests(authorize -> authorize
+//                            .requestMatchers("/login").permitAll()
+//                            .anyRequest().authenticated()
+//                    )
+//                    .formLogin(login -> login.disable());
+//
+//            return http.build();
+//        }
+//
+//    @Bean
+//    public BCryptPasswordEncoder passwordEncoder() {
+//        return new BCryptPasswordEncoder();
+//    }
 
-            return http.build();
-        }
-
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+//    @Bean
+//    public PasswordEncoder passwordEncoder() {
+//        return new BCryptPasswordEncoder();
+//    }
 }

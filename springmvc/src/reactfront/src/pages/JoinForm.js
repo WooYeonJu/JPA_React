@@ -26,6 +26,7 @@ const JoinForm = (props) => {
                 'Content-Type':'application/json; charset=utf-8',
             },
             body:JSON.stringify(user),
+            mode: 'cors',
         })
         .then((res) => {
             if(res !== null){

@@ -9,14 +9,17 @@ import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class UserController {
 
-    private final UserService userService;
-
-    @PostMapping("/joinForm")
-    public String joinUser(User joinUser){
-        userService.joinUser(joinUser);
-        return "redirect:/home";
-    }
+//    private final UserService userService;
+//
+//    @PostMapping("/joinForm")
+//    public String joinUser(User joinUser){
+//        System.out.println("aaa");
+//
+//        userService.joinUser(joinUser);
+//        return "redirect:/home";
+//    }
 
 }

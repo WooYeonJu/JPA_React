@@ -11,7 +11,7 @@ import JoinForm from "./pages/JoinForm.js";
 function App(){
   return (
     <div>
-      <Header />
+
       <container>
       <Routes>
         <Route path="/" element={<Home />} />
